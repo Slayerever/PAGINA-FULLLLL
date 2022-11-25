@@ -1,0 +1,334 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'open sans', sans-serif;
+    
+}
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background: #F7E4DD;
+}
+
+
+.Contenedor{
+    border: solid 1px black;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    
+}
+
+
+.cabecera{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 220px;
+    color: black;
+    
+}
+
+.cabecera img{
+    width: 100px;
+    border-radius: 5%; 
+ 
+}
+
+.cabecera_h1{
+    position: absolute;
+    top: 40px;
+    left: 150px;
+    color: black;
+}
+
+.cabecera_frase{
+    position: absolute;
+    top: 70px;
+    left: 150px;
+    color: black;
+}
+
+.nav{
+    margin: 10px 10px 0 0;
+    position: absolute;
+    background: none;
+    height: auto;
+    border: none;
+    top: 5px;
+    left: 760px;
+    
+    
+}
+
+
+.nav_link_1{
+    background: #fd8b7b;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    
+}
+
+.nav_link_2{
+    background:#fd8b7b;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+   
+}
+.nav_link_3{
+    background:#fff;
+    color: black;
+    padding: 5px;
+    border-radius: 3px;
+   font-size: 18px;
+}
+
+
+
+
+.galeria{
+    width: 100%;
+    height: 345px;
+    background:#E1C4C3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.galeria_lienzo{
+    width: 490px;
+    height: 350px;
+    overflow: hidden;
+    
+}
+
+.galeria_contenedor{
+    
+    display: flex;
+    width: 7000px;
+    height: 50px;
+    animation: slide 20s infinite alternate ease-in-out;
+    
+}
+
+.elemento1:checked~.galeria_contenedor  {
+    transform: translateX (0px);
+    
+}
+
+.elemento2:checked~.galeria_contenedor {
+    transform: translateX (-600px);
+    
+}
+
+.elemento3:checked~.galeria_contenedor {
+    transform: translateX (-1200px);
+    
+}
+
+.controles{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -26px;
+    
+}
+
+label {
+    margin: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    background: #4F5E83;
+    display: block;
+    cursor: pointer;
+    
+}
+
+@keyframes slide {
+    0% { margin-left: 0%;}
+    20% { margin-left: 0%;}
+    
+    25% { margin-left: -100%;}
+    45% { margin-left : -100%;}
+    
+    50% { margin-left: -200%;}
+    70% { margin-left: -200%;}
+    
+  
+}
+
+
+/*
+.slider-frame {
+    width: 100%;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+    
+    
+ 
+    animation: slide 15s infinite alternate ease-in-out;
+    
+   
+}
+
+
+.slider-frame ul{
+   display: flex;
+   padding: 0;
+   width: 100%; 
+    
+}
+
+.slider-frame li{
+    list-style: none;
+    width: 100%
+}
+
+
+.slider-frame img {
+    width: 100%
+        
+    
+}
+
+@keyframes slide {
+    0%{ margin-left: 0%;}
+    20%{ margin-left: 0%;}
+    
+    25%{ margin-left: -100%;}
+    45%{ margin-left : -100%;}
+    
+    50%{ margin-left: -200%;}
+    70%{ margin-left: -200%;}
+    
+  
+}
+*/
+
+.tienda{
+    
+    display: grid;
+    grid-template: repeat(3, 300px) / repeat(3,300px);
+    justify-content: center;
+    column-gap: 16px;
+    width: 100%;
+    height: auto;
+    column-gap: 16px;
+}
+
+.tienda article{
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    flex-flow: wrap;
+    border: solid;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #fd8b7b;
+    color: wheat;
+}
+
+.tienda img{
+    position: relative;
+    top: 5px;
+    width: 150px;
+    height: 100px;
+    border-radius: 15px;
+    
+}
+
+.tienda div{
+    width: 100%;
+    height: 30px;
+    background:#fd8b7b;
+    
+}
+
+.tienda h3{
+    text-align: center;
+    color: white;
+    padding-bottom: 5px;
+    font-size: 18px;
+border-radius: 20px;
+    
+}
+
+.tienda p {
+    font: 120% sans-serif;
+    text-align: justify;
+    padding: 15px;
+    
+}
+
+
+.espacio{
+    position: relative;
+    height: 45px;
+        
+}
+
+.piePagina{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 105px;
+    background: #fd8b7b;
+    align-content: center;
+    
+}
+
+.piePagina footer {
+    text-align: center;
+    color: white;
+}
+
+
+@media screen and (max-width: 600px) {
+    .tienda{
+        grid-template: repeat(3, 300px) / repeat(1,300px);
+    }
+
+
+.cabecera{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 130px;
+    
+}
+
+.cabecera figure{
+    width: 130px;
+    margin: auto;
+}
+
+.cabecera img{
+    width: 95px;
+    height: 80px;
+    
+}
+
+.cabecera_h1{
+    position: absolute;
+    top: 40px;
+    left: 100px;
+}
+
+.cabecera_frase{
+    position: absolute;
+    top: 70px;
+    left: 100px;
+}
+
+
+}

@@ -1,0 +1,63 @@
+
+
+
+.contener{
+    border: solid 1px black;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    align-content: center;
+}
+
+.cabezas_h1{
+     display: flex;
+    justify-content: space-between;
+    position: relative;
+    height:20px;
+    color: black;
+}
+
+.nav{
+    
+    margin: 10px 10px 0 0;
+    position: absolute;
+    background: none;
+    height: auto;
+    border: none;
+    top: 5px;
+    left: 760px;
+}
+
+.nav_linko{
+    background: #fd8b7b;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    
+}
+
+
+.foto{
+      border: solid 1px black;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+      width: 290px;
+    height: 450px;
+    overflow: hidden;
+     display: flex;
+     align-items:
+}
+    
+
+
+.contenido{
+    display: flex;
+    margin: auto;
+   
+    
+}
